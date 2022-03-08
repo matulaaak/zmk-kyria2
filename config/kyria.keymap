@@ -71,8 +71,8 @@ _____	&kp Z 		&kp X 		&kp C 		&kp D 		&kp V 	_____ 			_____ 			_____ 		_____ 	&k
 num_layer {
 		bindings = <
 _____ 	&kp GRAVE	 		&kp N7 	&kp N8 	&kp N9 		&kp TILDE												&trans 	&trans 		&trans 		&trans 		&reset 		_____
-_____ 	&kp NON_US_HASH 	&kp N4 	&kp N5 	&kp N6 		&kp ___													&trans 	&kp RSHFT 	&kp RCTRL 	&kp LALT 	&kp RGUI 	_____
-_____ 	&kp PRCNT 			&kp N1 	&kp N2 	&kp N3 		&kp ___  	_____ 		_____ 			_____ 	_____ 	&trans 	&trans 		&trans 		&trans 		&trans 		_____
+_____ 	&kp NON_US_HASH 		&kp N4 	&kp N5 	&kp N6 		_____													&trans 	&kp RSHFT 	&kp RCTRL 	&kp LALT 	&kp RGUI 	_____
+_____ 	&kp PRCNT 			&kp N1 	&kp N2 	&kp N3 		_____  	_____ 		_____ 			_____ 	_____ 	&trans 	&trans 		&trans 		&trans 		&trans 		_____
 									&trans 	&kp DOT 	&kp N0 		&kp MINUS 	&kp UNDER		&trans 	&trans	&trans 	&trans 		&trans
 		>;
 		sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp LA(LEFT) LA(RIGHT)>;
@@ -82,7 +82,7 @@ sym_layer {
 _____ 	&kp AMPS 	&kp PLUS 	&kp STAR 	&kp LBKT 	&kp RBKT												&trans 		&trans 		&trans 	   &trans 		&trans 		  _____
 _____ 	&kp DLLR 	&kp MINUS 	&kp FSLH	&kp LBRC 	&kp RBRC												&trans 		&kp RSHFT 	&kp RCTRL 	&kp LALT 	&kp RGUI      _____
 _____ 	&kp AT 		&kp CARET  	&kp BSLH 	&kp LT  	&kp GT		_____ 		_____			_____ 	_____ 	&trans 		&trans 		&trans 	   &trans 		&trans 		  _____
-								&trans		&kp EQUAL	&kp ___ 	&kp LPAR 	&kp RPAR		&trans 	&trans 	&trans 		&trans 		&trans
+								&trans		&kp EQUAL	&trans 	&kp LPAR 	&kp RPAR		&trans 	&trans 	&trans 		&trans 		&trans
 		>;
 		sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp LA(LEFT) LA(RIGHT)>;
 	};
