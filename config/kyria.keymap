@@ -61,7 +61,7 @@ behaviors {
 compatible = "zmk,keymap";
 default_layer {
 		bindings = <
-_____ 	&kp q 		&kp W 		&kp F 		&kp P 		&kp B 														&kp J 	&kp L 		&kp U 			&kp Y 		&hmr DQT SQT 	_____
+_____ 	&kp Q 		&kp W 		&kp F 		&kp P 		&kp B 														&kp J 	&kp L 		&kp U 			&kp Y 		&hmr DQT SQT 	_____
 _____ 	&hmr LGUI A &hmr LALT R &hmi LCTRL S &hmi LSHFT T &kp G 													&kp M 	&hmi RSHFT N &hmi RCTRL E 	&hmr LALT I &hmr RGUI O 	_____
 _____	&kp Z 		&kp X 		&kp C 		&kp D 		&kp V 	_____ 			_____ 			_____ 		_____ 	&kp K 	&kp H 		&hmi EXCL COMMA &hmr QMARK DOT &hmr COLON SEMI 	_____
 								_____ 	&CAPS 	&lt MSE TAB 	&lt NAV SPACE 	&lt MED RET 	&lt SYM DEL &lt NUM BSPC &lt FUN ESC _____ _____
