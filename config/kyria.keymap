@@ -56,22 +56,6 @@ behaviors {
 		bindings = <&kp>, <&kp>;
 		};
     };
-	
-	combos {
-		compatible = "zmk,combos";
-		combo_caps {
-		timeout-ms = <50>;
-		key-positions = <02 04>;
-		bindings = <&kp CAPS>;
-		layers = <DEFAULT>;
-		};
-combo_capsword {
-		timeout-ms = <50>;
-		key-positions = <03 04>;
-		bindings = <&caps_word>;
-		layers = <DEFAULT>;
-		};
-	};
 
 / {
 	keymap {
@@ -81,7 +65,7 @@ default_layer {
 _____ 	&kp q 		&kp W 		&kp F 		&kp P 		&kp B 														&kp J 	&kp L 		&kp U 			&kp Y 		&hmr DQT SQT 	_____
 _____ 	&hmr LGUI A &hmr LALT R &hmi LCTRL S &hmi LSHFT T &kp G 													&kp M 	&hmi RSHFT N &hmi RCTRL E 	&hmr LALT I &hmr RGUI O 	_____
 _____	&kp Z 		&kp X 		&kp C 		&kp D 		&kp V 	_____ 			_____ 			_____ 		_____ 	&kp K 	&kp H 		&hmi EXCL COMMA &hmr QMARK DOT &hmr COLON SEMI 	_____
-								_____ 	&caps_word 	&lt MSE TAB 	&lt NAV SPACE 	&lt MED RET 	&lt SYM DEL &lt NUM BSPC &lt FUN ESC _____ _____
+								_____ 	&CAPS 	&lt MSE TAB 	&lt NAV SPACE 	&lt MED RET 	&lt SYM DEL &lt NUM BSPC &lt FUN ESC _____ _____
 		>;
 		sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp LA(LEFT) LA(RIGHT)>;
 };
