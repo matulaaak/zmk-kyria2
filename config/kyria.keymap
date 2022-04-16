@@ -63,7 +63,7 @@ default_layer {
 		bindings = <
 _____ 	&kp Q 		&kp W 		&kp F 		&kp P 		&kp B 														&kp J 	&kp L 		&kp U 			&kp Y 		&hmr DQT SQT 	_____
 _____ 	&hmr LGUI A &hmr LALT R &hmi LCTRL S &hmi LSHFT T &kp G 													&kp M 	&hmi RSHFT N &hmi RCTRL E 	&hmr LALT I &hmr RGUI O 	_____
-_____	&kp Z 		&kp X 		&kp C 		&kp D 		&kp V 	_____ 			_____ 			_____ 		_____ 	&kp K 	&kp H 		&hmi EXCL COMMA &hmr QMARK DOT &hmr COLON SEMI 	_____
+_____	&lt NUM Z 	&kp X 		&kp C 		&kp D 		&kp V 	_____ 			_____ 			_____ 		_____ 	&kp K 	&kp H 		&hmi EXCL COMMA &hmr QMARK DOT &hmr COLON SEMI 	_____
 								_____ 	&kp CAPS 	&lt MSE TAB 	&lt NAV SPACE 	&lt MED RET 	&lt SYM DEL &lt NUM BSPC &lt FUN ESC &kp CAPS _____
 		>;
 		sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp LA(LEFT) LA(RIGHT)>;
@@ -73,16 +73,16 @@ num_layer {
 _____ 	&kp GRAVE	 		&kp N7 	&kp N8 	&kp N9 		&kp TILDE												&trans 	&trans 		&trans 		&trans 		&reset 		_____
 _____ 	&kp NON_US_HASH 		&kp N4 	&kp N5 	&kp N6 		_____													&trans 	&kp RSHFT 	&kp RCTRL 	&kp LALT 	&kp RGUI 	_____
 _____ 	&kp PRCNT 			&kp N1 	&kp N2 	&kp N3 		_____  	_____ 		_____ 			_____ 	_____ 	&trans 	&trans 		&trans 		&trans 		&trans 		_____
-									&trans 	&kp DOT 	&kp N0 		&kp MINUS 	&kp UNDER		&trans 	&trans	&trans 	&trans 		&trans
+									&trans 	&kp COMMA 	&kp DOT		&kp N0 	&kp UNDER		&trans 	&trans	&trans 	&trans 		&trans
 		>;
 		sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp LA(LEFT) LA(RIGHT)>;
 	};
 sym_layer {
 		bindings = <
-_____ 	&kp AMPS 	&kp PLUS 	&kp STAR 	&kp LBKT 	&kp RBKT												&trans 		&trans 		&trans 	   &trans 		&trans 		  _____
-_____ 	&kp DLLR 	&kp MINUS 	&kp FSLH	&kp LBRC 	&kp RBRC												&trans 		&kp RSHFT 	&kp RCTRL 	&kp LALT 	&kp RGUI      _____
-_____ 	&kp AT 		&kp CARET  	&kp BSLH 	&kp LT  	&kp GT		_____ 		_____			_____ 	_____ 	&trans 		&trans 		&trans 	   &trans 		&trans 		  _____
-								&trans		&kp EQUAL	&trans 	&kp LPAR 	&kp RPAR		&trans 	&trans 	&trans 		&trans 		&trans
+_____ 	&kp AT	 	&kp PLUS 	&kp STAR 	&hmi LBRC LBKT 	&hmi RBRC RBKT												&trans 		&trans 		&trans 	   &trans 		&trans 		  _____
+_____ 	&kp DLLR 	&kp CARET 	&kp FSLH	&kp LPAR 	&kp RPAR												&trans 		&kp RSHFT 	&kp RCTRL 	&kp LALT 	&kp RGUI      _____
+_____ 	&kp AMPS	&kp MINUS  	&kp BSLH 	&kp LT  	&kp GT		_____ 		_____			_____ 	_____ 	&trans 		&trans 		&trans 	   &trans 		&trans 		  _____
+								&trans		&kp EQUAL	&trans 	&kp MINUS 	&kp UNDER		&trans 	&trans 	&trans 		&trans 		&trans
 		>;
 		sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp LA(LEFT) LA(RIGHT)>;
 	};
@@ -97,10 +97,10 @@ _____ 	&kp F10 	&kp F1 	&kp F2 	&kp F3 	&trans 	_____ 	_____			_____ 	_____ 	&tr
 	};
 nav_layer {
 		bindings = < 
-_____ 	&trans     &trans     &trans     &trans     &trans 												&trans 	&kp LC(LEFT) 	&kp LC(DOWN) 	&kp LC(UP) 	&kp LC(RIGHT) 	_____
-_____ 	&kp LGUI   &kp LALT   &kp LCTRL  &kp LSHFT  &trans 												&trans 	&kp LEFT 		&kp DOWN 		&kp UP 		&kp RIGHT 		_____
+_____ 	&trans     &trans     &trans     &trans     &trans 								&trans 	&kp LC(LEFT) 	&kp LC(DOWN) 	&kp LC(UP) 	&kp LC(RIGHT) 	_____
+_____ 	&kp LGUI   &kp LALT   &kp LCTRL  &kp LSHFT  &trans 								&trans 	&kp LEFT 	&kp DOWN 	&kp UP 		&kp RIGHT 	_____
 _____ 	&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(D) 	&kp LC(V) _____ 	_____ 			_____ 	_____ 	&trans 	&kp LA(LEFT) 	&kp LA(DOWN) 	&kp LA(UP) 	&kp LA(RIGHT) 	_____
-		                       &trans    &trans     &trans    &trans 	&trans			&trans 	&trans 	&trans 	&trans 			&trans
+		                       &trans    &trans     &trans    &trans 	&trans			&trans 	&trans 	&trans 	&trans 	&trans
 		>;
 		sensor-bindings = <&inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_VOL_DN C_VOL_UP>;
 	};
@@ -115,10 +115,10 @@ _____   &trans     &trans    &trans     &trans     &trans 	_____ 	_____ 			_____
 	};
 med_layer {
 	bindings = <
-_____ 	&trans     &trans     &trans     &trans     &trans 														&trans 	&trans   	&trans		&trans   	&trans 	_____
-_____ 	&kp LGUI   &kp LALT   &kp LCTRL  &kp LSHFT  &trans 														&trans 	&kp C_PREV 	&kp C_PP    &kp C_NEXT 	&trans 	_____
-_____ 	&trans     &trans     &trans     &trans     &trans 	_____ 	_____ 			_____ 			_____ 		&trans 	&trans     	&trans      &trans 		&trans 	_____
-									&trans 	&trans 	&trans 	&trans 	&trans 			&kp K_STOP2		&kp C_PP 	&trans 	&trans 		&kp K_MUTE
+_____ 	&trans		&trans		&trans		&trans		&trans 									&trans 	&trans   	&trans		&trans   	&trans 		_____
+_____ 	&kp LGUI	&kp LALT	&kp LCTRL	&kp LSHFT	&trans 									&trans 	&kp C_PREV 	&kp C_VOL_DN    &kp C_VOL_UP 	&kp C_NEXT 	_____
+_____ 	&trans		&trans		&trans		&trans		&trans	_____	_____			_____ 		_____ 		&trans 	&trans     	&trans     	&trans		&trans 		_____
+					&trans		&trans		&trans	&trans	&trans			&kp K_STOP2	&kp C_PP 	&trans 	&trans 		&kp K_MUTE
 		>;
 		sensor-bindings = <&inc_dec_kp C_RW C_FF &inc_dec_kp C_VOL_DN C_VOL_UP>;
 	};
