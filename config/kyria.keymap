@@ -26,10 +26,6 @@
 #define MSE 5
 #define MED 6
 
-&caps_word {
-	continue-list = <UNDERSCORE MINUS>;
-};
-
 / {
 behaviors {
 	hmi: homerow_mods_index {
@@ -68,7 +64,7 @@ default_layer {
 _____ 	&kp Q 		&kp W 		&kp F 		&kp P 		&kp B 														&kp J 	&kp L 		&kp U 			&kp Y 		&hmr DQT SQT 	_____
 _____ 	&hmr LGUI A &hmr LALT R &hmi LCTRL S &hmi LSHFT T &kp G 													&kp M 	&hmi RSHFT N &hmi RCTRL E 	&hmr LALT I &hmr RGUI O 	_____
 _____	&kp Z 		&kp X 		&kp C 		&kp D 		&kp V 	_____ 			_____ 			_____ 		_____ 	&kp K 	&kp H 		&hmi EXCL COMMA &hmr QMARK DOT &hmr COLON SEMI 	_____
-								_____ 	&CAPS_WORD 	&lt MSE TAB 	&lt NAV SPACE 	&lt MED RET 	&lt SYM DEL &lt NUM BSPC &lt FUN ESC &kp CAPS _____
+								_____ 	&kp CAPS_WORD 	&lt MSE TAB 	&lt NAV SPACE 	&lt MED RET 	&lt SYM DEL &lt NUM BSPC &lt FUN ESC &kp CAPS _____
 		>;
 		sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp LA(LEFT) LA(RIGHT)>;
 };
