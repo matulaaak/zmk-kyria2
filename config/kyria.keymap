@@ -57,14 +57,24 @@ behaviors {
 		};
     };
 
+/*                            KEY POSITIONS
+
+  ╭─────────────-────────-─╮                 ╭────────────────────────╮
+  │  0   1   2   3   4   5 │                 │  6   7   8   9  10  11 │
+  │ 12  13  14  15  16  17 ╰───────╮ ╭───────╯ 18  19  20  21  22  23 │
+  │ 24  25  26  27  28  29  30  31 │ │ 32  33  34  35  36  37  38  39 │
+  ╰───────────╮ 40  41  42  43  44 │ │ 45  46  47  48  49 ╭───────────╯
+              ╰────────────────────╯ ╰────────────────────╯            */
+
+
 	keymap {
 compatible = "zmk,keymap";
 default_layer {
 		bindings = <
-_____ 	&kp Q 		&kp W 		&kp F 		&kp P 		&kp B 														&kp J 	&kp L 		&kp U 			&kp Y 		&hmr DQT SQT 	_____
-_____ 	&hmr LGUI A &hmr LALT R &hmi LCTRL S &hmi LSHFT T &kp G 													&kp M 	&hmi RSHFT N &hmi RCTRL E 	&hmr LALT I &hmr RGUI O 	_____
-_____	&lt NUM Z 	&kp X 		&kp C 		&kp D 		&kp V 	_____ 			_____ 			_____ 		_____ 	&kp K 	&kp H 		&hmi EXCL COMMA &hmr QMARK DOT &hmr COLON SEMI 	_____
-								_____ 	&kp CAPS 	&lt MSE TAB 	&lt NAV SPACE 	&lt MED RET 	&lt SYM DEL &lt NUM BSPC &lt FUN ESC &kp CAPS _____
+_____ 	&kp Q		&kp W		&kp F		&kp P		&kp B 											&kp J 		&kp L 		&kp U 		&kp Y		&hmr DQT SQT 	_____
+_____ 	&hmr LGUI A	&hmr LALT R	&hmi LCTRL S	&hmi LSHFT T	&kp G 											&kp M 		&hmi RSHFT N 	&hmi RCTRL E 	&hmr LALT I	&hmr RGUI O 	_____
+_____	&lt NUM Z	&kp X		&kp C		&kp D 		&kp V		_____ 		_____ 			_____ 		_____ 		&kp K 		&kp H 		&hmi EXCL COMMA &hmr QMARK DOT	&hmr COLON SEMI	_____
+					_____ 		&kp CAPS 	&lt MSE TAB 	&lt NAV SPACE 	&lt MED RET 		&lt SYM DEL	&lt NUM BSPC	&lt FUN ESC	&kp CAPS 	_____
 		>;
 		sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp LA(LEFT) LA(RIGHT)>;
 };
