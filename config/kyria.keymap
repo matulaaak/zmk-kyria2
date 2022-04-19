@@ -10,8 +10,8 @@
 #include <dt-bindings/zmk/outputs.h>
 
 // Encoder resolutions
-&left_encoder   { resolution = <1>; };
-&right_encoder  { resolution = <1>; };
+&left_encoder   { resolution = <2>; };
+&right_encoder  { resolution = <2>; };
 
 // None/Trans
 #define _____ &none
