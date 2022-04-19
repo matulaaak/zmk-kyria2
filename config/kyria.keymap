@@ -28,17 +28,18 @@
 
 / {
 macros {
-        zed_em_kay: zed_em_kay {
-            label = "ZM_zed_em_kay";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LSHFT>
-                , <&macro_tap &kp Z &kp M &kp K>
-                , <&macro_release &kp LSHFT>
-                ;
-        };
-    };
+        pwr_par: pwr_par {
+		label = "power_parethesis";
+		compatible = "zmk,behavior-macro";
+		#binding-cells = <0>;
+		wait-ms = <40>;
+		tap-ms = <40>;
+		bindings
+		= <&kp LPAR &kp RPAR>
+		, <&kp LEFT>
+		;
+	};
+};
 
 behaviors {
 	hmi: homerow_mods_index {
@@ -125,7 +126,7 @@ sym_layer {
 _____ 	&kp AT	 	&kp PLUS 	&kp STAR 	&hmi LBRC LBKT 	&hmi RBRC RBKT												&trans 		&trans 		&trans 	   &trans 		&trans 		  _____
 _____ 	&kp DLLR 	&kp CARET 	&kp FSLH	&kp LPAR 	&kp RPAR												&trans 		&kp RSHFT 	&kp RCTRL 	&kp LALT 	&kp RGUI      _____
 _____ 	&kp AMPS	&kp MINUS  	&kp BSLH 	&kp LT  	&kp GT		_____ 		_____			_____ 	_____ 	&trans 		&trans 		&trans 	   &trans 		&trans 		  _____
-					&trans		&trans		&trans 		&kp MINUS 	&kp EQUAL		&trans 	&trans 	&trans 		&trans 		&trans
+					&trans		&trans		&pwr_par	&kp MINUS 	&kp EQUAL		&trans 	&trans 	&trans 		&trans 		&trans
 		>;
 		sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp LA(LEFT) LA(RIGHT)>;
 	};
